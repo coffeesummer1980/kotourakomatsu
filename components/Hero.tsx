@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Background decoration - Animated */}
             <motion.div
                 animate={{ x: [0, 20, 0], opacity: [0.3, 0.5, 0.3] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 10, repeat: Infinity }}
                 className="absolute top-0 right-0 w-1/2 h-full bg-blue-100/30 -skew-x-12 translate-x-1/4 pointer-events-none"
             />
 
@@ -47,7 +47,7 @@ export default function Hero() {
                                 <motion.span
                                     initial={{ width: "0%" }}
                                     animate={{ width: "100%" }}
-                                    transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
+                                    transition={{ delay: 1.4, duration: 0.8 }}
                                     className="absolute bottom-1 left-0 h-3 bg-brand-yellow/40 -z-10 rounded-sm"
                                 />
                             </motion.span>
