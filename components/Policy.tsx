@@ -57,6 +57,29 @@ const cardVariants = {
     }
 };
 
+const policyMovies = [
+    {
+        id: 2,
+        title: "創造政策（教育）",
+        youtubeId: "pXWzA8DBC84"
+    },
+    {
+        id: 3,
+        title: "創造政策（経済）",
+        youtubeId: "OTbUbg2qLJs"
+    },
+    {
+        id: 4,
+        title: "創造政策（健康）",
+        youtubeId: "Fw5FDoffuU8"
+    },
+    {
+        id: 5,
+        title: "創造政策（環境）",
+        youtubeId: "zA9gqU7bahQ"
+    }
+];
+
 export default function Policy() {
     return (
         <section id="policy" className="py-20 bg-slate-50">
@@ -76,6 +99,45 @@ export default function Policy() {
                     </p>
                     <div className="w-16 h-1 bg-brand-orange mx-auto mt-6 rounded-full"></div>
                 </motion.div>
+
+                {/* Policy Videos Grid (Moved from Movies) */}
+                <div className="mb-20">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center mb-8"
+                    >
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-bold mb-2">
+                            解説動画
+                        </span>
+                        <h4 className="text-xl font-bold text-slate-800">政策のポイントを動画で解説</h4>
+                    </motion.div>
+
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto">
+                        {policyMovies.map((movie, index) => (
+                            <motion.div
+                                key={movie.id}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1, duration: 0.5 }}
+                                className="relative aspect-[9/16] bg-white rounded-xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300"
+                            >
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src={`https://www.youtube.com/embed/${movie.youtubeId}?playsinline=1&controls=1&rel=0&modestbranding=1`}
+                                    title={movie.title}
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    loading="lazy"
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
 
                 {/* Policy Summary Image */}
                 <motion.div
