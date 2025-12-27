@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Movies from "@/components/Movies";
 import Policy from "@/components/Policy";
 import Vision from "@/components/Vision";
 import Contact from "@/components/Contact";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Movies />
       <Policy />
       <Vision />
       <Contact />

@@ -86,7 +86,7 @@ export default function Policy() {
                     className="max-w-4xl mx-auto mb-16 shadow-2xl rounded-2xl overflow-hidden border-4 border-white"
                 >
                     <Image
-                        src="/images/policy/vision_v1.png"
+                        src="/images/policy-diagram-new.png"
                         alt="小松ひろあき 政策ビジョン2026"
                         width={1200}
                         height={800}
