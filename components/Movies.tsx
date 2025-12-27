@@ -6,13 +6,12 @@ const movies = [
     {
         id: 1,
         title: "自己紹介",
-        // Note: User provided same URL for 1 and 2. Keeping as is for now.
         youtubeId: "209cbahS4fU"
     },
     {
         id: 2,
         title: "創造政策（教育）",
-        youtubeId: "209cbahS4fU"
+        youtubeId: "pXWzA8DBC84"
     },
     {
         id: 3,
