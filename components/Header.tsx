@@ -13,8 +13,8 @@ export default function Header() {
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
                     <Link href="#about" className="hover:text-brand-orange transition-colors">プロフィール</Link>
+                    <Link href="#movies" className="hover:text-brand-orange transition-colors">動画</Link>
                     <Link href="#policy" className="hover:text-brand-orange transition-colors">4つの政策</Link>
-                    <Link href="#vision" className="hover:text-brand-orange transition-colors">まちづくり</Link>
                     <Link href="#contact" className="px-5 py-2.5 bg-brand-orange text-white rounded-full font-bold hover:bg-orange-600 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         応援する
                     </Link>

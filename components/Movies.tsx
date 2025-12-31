@@ -24,7 +24,7 @@ export default function Movies() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-brand-orange font-bold tracking-wider uppercase text-sm mb-2">MOVIES</h2>
-                    <h3 className="text-3xl md:text-4xl font-bold text-slate-900">活動ショート動画</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold text-slate-900">自己紹介動画</h3>
                     <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
                         小松ひろあきの人柄や想いを、短い動画でわかりやすくお伝えします。
                     </p>

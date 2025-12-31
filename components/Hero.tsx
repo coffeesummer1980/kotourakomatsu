@@ -28,7 +28,11 @@ export default function Hero() {
                             琴浦町長選挙 2026
                         </motion.div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900 font-sans tracking-tight">
+                        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
+                            小松 <span className="text-brand-blue">ひろあき</span>
+                        </h2>
+
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-700 font-sans tracking-tight">
                             <motion.span
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
