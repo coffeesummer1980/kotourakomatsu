@@ -87,9 +87,9 @@ export default function Hero() {
                         whileHover={{ rotate: 0, scale: 1.02, transition: { duration: 0.3 } }}
                         className="flex-1 relative w-full max-w-md md:max-w-lg mx-auto"
                     >
-                        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white bg-slate-200">
+                        <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white bg-slate-200">
                             <Image
-                                src="/images/profile_main.jpg"
+                                src="/images/profile_vertical.jpg"
                                 alt="小松ひろあき"
                                 fill
                                 className="object-cover object-top"

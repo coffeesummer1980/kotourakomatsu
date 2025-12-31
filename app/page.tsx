@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Movies from "@/components/Movies";
 import Policy from "@/components/Policy";
-import Vision from "@/components/Vision";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <About />
       <Movies />
       <Policy />
-      <Vision />
       <Contact />
 
       {/* Floating Action Button for mobile (optional, but good for LP) */}
